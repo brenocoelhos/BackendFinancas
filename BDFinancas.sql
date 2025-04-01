@@ -1,3 +1,4 @@
+create database financas;
 use financas;
 
 create table usuario (
