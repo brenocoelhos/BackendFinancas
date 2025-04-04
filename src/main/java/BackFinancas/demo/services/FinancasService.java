@@ -1,15 +1,19 @@
 package BackFinancas.demo.services;
 
+import BackFinancas.demo.repository.FinancasRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import BackFinancas.demo.domain.User;
 
 @Service
 public class FinancasService {
 
-    public String helloWorld(String name) {
-        return "Hello World!" + " " + name;
+    @Autowired
+    private FinancasRepository financasRepository;
+
+    public User salvar(User user) {
+        return financasRepository.save(user);
     }
-    public String login (String usuario, String senha) {
-       return "Usuario: " + usuario + " Senha: " + senha;
-    }
+
 }
 

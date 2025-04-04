@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface financasRepository extends JpaRepository<User, Long> {
+public interface FinancasRepository extends JpaRepository<User, Long> {
 
 }

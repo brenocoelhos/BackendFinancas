@@ -1,7 +1,6 @@
 package BackFinancas.demo.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,9 +10,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
+@Table(name = "usuario")
 public class User {
-    private String usuario;
+    private String nome;
     private String senha;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 }

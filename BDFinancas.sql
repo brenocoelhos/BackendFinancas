@@ -2,7 +2,7 @@ create database financas;
 use financas;
 
 create table usuario (
-id int not null primary key auto_increment,
+id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 nome varchar (50) not null,
 senha varchar (30) not null
 );
