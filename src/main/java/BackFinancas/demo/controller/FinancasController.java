@@ -19,7 +19,7 @@ public class FinancasController {
     // Endpoint para criar um novo User
     @PostMapping
     public ResponseEntity<User> criarUsuario(@RequestBody User user) {
-        User userSalvo = financasService.salvar(user);
+        User userSalvo = financasService.criarOuRetornarUsuario(user);
         return ResponseEntity.status(HttpStatus.CREATED).body(userSalvo);
     }
 
