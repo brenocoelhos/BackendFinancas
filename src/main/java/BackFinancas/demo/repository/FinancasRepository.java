@@ -10,5 +10,5 @@ import java.util.Optional;
 public interface FinancasRepository extends JpaRepository<User, Long> {
     Optional<User> findByNome(String nome);
 
-
+    Optional<User> findBySenha(String senha);
 }
