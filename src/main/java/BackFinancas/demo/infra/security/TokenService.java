@@ -2,7 +2,10 @@ package BackFinancas.demo.infra.security;
 
 
 import BackFinancas.demo.domain.user.User;
-import BackFinancas.auth0.jwt.JWT;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.exceptions.JWTCreationException;
+import com.auth0.jwt.exceptions.JWTVerificationException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 

@@ -5,6 +5,7 @@ import BackFinancas.demo.domain.user.AuthenticationDTO;
 import BackFinancas.demo.domain.user.LoginResponseDTO;
 import BackFinancas.demo.domain.user.RegisterDTO;
 import BackFinancas.demo.domain.user.User;
+import BackFinancas.demo.infra.security.TokenService;
 import BackFinancas.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
